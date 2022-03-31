@@ -1,2 +1,2 @@
 # php-redis-session-handler
-PHP Redist Session Handler Buildpack
+PHP Redis Session Handler Buildpack
