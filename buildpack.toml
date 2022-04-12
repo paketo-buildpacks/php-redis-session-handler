@@ -1,0 +1,19 @@
+api = "0.7"
+
+[buildpack]
+  description = "A buildpack for configuring a Redist session handler for PHP"
+  homepage = "https://github.com/paketo-buildpacks/php-redis-session-handler"
+  id = "paketo-buildpacks/php-redis-session-handler"
+  keywords = ["php", "redis"]
+  name = "Paketo PHP Redis Session Handler Buildpack"
+
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/php-redis-session-handler/blob/main/LICENSE"
+
+[metadata]
+  include-files = ["bin/build", "bin/detect", "bin/run", "buildpack.toml", "config/php-redis.ini"]
+  pre-package = "./scripts/build.sh"
+
+[[stacks]]
+  id = "io.buildpacks.stacks.bionic"
