@@ -1,5 +1,6 @@
-# php-redis-session-handler
-A Cloud Native Buildpack for configuring a Redis session handler in PHP apps.
+# PHP Redis Session Handler Cloud Native Buildpack
+A Cloud Native Buildpack for configuring a [Redis](https://redis.io/) [session
+handler](https://www.php.net/manual/en/class.sessionhandler.php) in PHP apps.
 
 The buildpack generates an `.ini` configuration snippet to allow for connecting
 to an external Redis server as a session handler. The `host`, `port`, and `password` 
