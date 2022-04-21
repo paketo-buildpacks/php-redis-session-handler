@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/BurntSushi/toml v1.1.0
-	github.com/docker/docker v20.10.12+incompatible
+	github.com/docker/docker v20.10.14+incompatible
 	github.com/onsi/gomega v1.19.0
 	github.com/paketo-buildpacks/occam v0.8.0
 	github.com/paketo-buildpacks/packit/v2 v2.2.0
