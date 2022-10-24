@@ -3,7 +3,7 @@ module github.com/paketo-buildpacks/php-redis-session-handler
 go 1.18
 
 require (
-	github.com/BurntSushi/toml v1.2.0
+	github.com/BurntSushi/toml v1.2.1
 	github.com/docker/docker v20.10.20+incompatible
 	github.com/onsi/gomega v1.22.1
 	github.com/paketo-buildpacks/occam v0.13.3
