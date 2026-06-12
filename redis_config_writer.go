@@ -48,7 +48,9 @@ func (c RedisConfigWriter) Write(redisConfig RedisConfig, layerPath, cnbPath str
 	if err != nil {
 		return "", err
 	}
-	defer f.Close()
+	defer func() {
+		_ = f.Close()
+	}()
 
 	_, err = io.Copy(f, &b)
 	if err != nil {
