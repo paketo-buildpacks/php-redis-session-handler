@@ -1,8 +1,6 @@
 package phpredishandler
 
 import (
-	"fmt"
-
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/paketo-buildpacks/packit/v2/servicebindings"
 )
@@ -24,7 +22,7 @@ func Detect(bindingResolver DetectBindingResolver) packit.DetectFunc {
 		}
 
 		if len(redisBindings) < 1 {
-			return packit.DetectResult{}, packit.Fail.WithMessage(fmt.Sprintf("no service bindings of type `%s` provided", RedisBindingType))
+			return packit.DetectResult{}, packit.Fail.WithMessage("no service bindings of type `" + RedisBindingType + "` provided")
 		}
 
 		return packit.DetectResult{
