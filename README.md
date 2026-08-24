@@ -2,6 +2,8 @@
 A Cloud Native Buildpack for configuring a [Redis](https://redis.io/) [session
 handler](https://www.php.net/manual/en/class.sessionhandler.php) in PHP apps.
 
+The buildpack supports Paketo Jammy, Noble, and Resolute builders.
+
 The buildpack generates an `.ini` configuration snippet to allow for connecting
 to an external Redis server as a session handler. The `host`, `port`, and `password` 
 are configurable via service bindings.
